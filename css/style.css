@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Demibold.woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-ExtraLight.woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Heavy.woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Light.woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans Normal';
+    src: url('/resources/font/MiSans-Normal.woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Semibold.woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Regular.woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/resources/font/MiSans-Thin.woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body{
+    background-color: #1F0038;
+    font-family: 'MiSans';
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: white !important;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
