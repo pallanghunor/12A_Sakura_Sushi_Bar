@@ -82,8 +82,10 @@
 
 body{
     background-color: #1F0038;
-    font-family: 'MiSans';
+    font-family: "MiSans";
     color: white;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 1.6;
     margin: 0;
     padding: 0;
