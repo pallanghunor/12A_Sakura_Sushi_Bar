@@ -78,13 +78,17 @@
     font-display: swap;
 }
 
-
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body{
-    background-color: #1F0038;
+    background-color: #0c0016;
     font-family: "MiSans";
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.6;
     margin: 0;
@@ -99,4 +103,100 @@ a{
     width: 80%;
     margin: auto;
     overflow: hidden;
+}
+
+.navbar{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 15px;
+}
+
+.login-popup {
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 400px;
+    padding: 20px 30px;
+    background: linear-gradient(45deg, #E203AA, #C90397,#B00385);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.login-popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.login-popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    color: #888;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login-popup .form h2{
+    text-align: center;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.login-popup .form .form-element{
+    margin: 15px 0px;
+}
+
+.login-popup .form .form-element label{
+    font-size: 14px;
+}
+
+.login-popup .form .form-element input[type="text"],
+.login-popup .form .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-popup .form .form-element input[type="checkbox"]{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.login-popup .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-popup .form .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
 }
