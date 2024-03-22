@@ -9,3 +9,10 @@ var _a, _b;
     var _a;
     (_a = document.querySelector(".login-popup")) === null || _a === void 0 ? void 0 : _a.classList.remove("active");
 });
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+// const scrollHeader = () => {
+//     const header = document.querySelector("#header");
+//     if (this.scrollY >= 50) header?.classList.add("scroll-header");
+//     else header?.classList.remove("scroll-header");
+// };
+// window.addEventListener("scroll", scrollHeader);
