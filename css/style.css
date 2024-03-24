@@ -118,41 +118,33 @@ img{
     margin-inline: 1.5rem;
 }
 
-.grid{
-    display: grid;
-    gap: 1.5rem;
-}
-
-.section{
-    padding-block: 5rem 1rem;
-}
-
-.section-title{
-    font-size: 1.5rem;
-    font-family: 'MiSans';
-    margin-bottom: 1.5rem;
-}
-
-.section-subtitle{
-    display: block;
-    font-size: 1.25rem;
-    font-family: 'MiSans';
-    margin-bottom: .5rem;
-}
-
-.section-title,
-.section-subtitle{
-    text-align: center;
-}
-
-.main{
+.container-fluid{
     overflow: hidden;
+    margin-top: 70px;
+}
+
+section{
+    height: 100vh;
 }
 
 .navbar{
+    background-color: #000000;
+    border-radius: 2%;
+    height: 70px;
+}
+
+.navbar .container-fluid{
     margin-left: 2vw;
     margin-right: 2vw;
     margin-top: 15px;
+}
+
+.navbar-collapse{
+   background-color: #000000;
+}
+
+.bg-header{
+    box-shadow: 0 2px 8px hsla(315, 97%, 40%, 0.3);
 }
 
 /* ========================= LOGIN POPUP ============================= */
@@ -166,7 +158,7 @@ img{
     width: 60vw;
     max-width: 600px;
     padding: 20px 30px;
-    background: linear-gradient(45deg, #E203AA, #C90397,#B00385);
+    background: linear-gradient(45deg, #E203AA, hsl(315, 97%, 40%),#B00385);
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
@@ -250,8 +242,11 @@ img{
 
 /* =============================== HOME ============================= */
 
-.home{
-    position: relative;
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .home-container{
@@ -260,8 +255,10 @@ img{
 }
 
 .home-img{
-    width: 300px;
+    max-width: 600px;
+    width: 100%;
     justify-self: center;
+    padding: 40px;
 }
 
 .home-data{

@@ -20,80 +20,81 @@
 <body>
 
     <!-- ================ HEADER ================= -->
-    <header>
-        <nav class="navbar sticky-top navbar-expand-md navbar-dark" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./resources/img/logo.png" alt="Logo" width="100" height="33"
-                        class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">Table reservation</a>
-                        </li>
-                        <li class="nav-item ms-3">
-                            <a class="nav-link" href="#">About us</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./resources/img/logo.png" alt="Logo" width="100" height="33"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#">Table reservation</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+
                 <div class="navbar-nav ml-auto ms-3">
                     <a class="nav-link" id="login" href="#">Login</a>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- ================ MAIN ================== -->
-    <main class="main">
+    <div class="container-fluid">
 
         <!-- =============== HOME =============== -->
-        <section class="home section" id="home">
-            <div class="home-container container grid">
-                <img src="./resources/img/home-sushi-rolls.png" class="home-img">
+        <section class="home-section" id="home">
+            <div class="row justify-content-center align-items-center"> <!-- Add align-items-center class -->
+                <div class="col-sm-auto">
+                    <img src="./resources/img/home-sushi-rolls.png" class="home-img">
+                </div>
+                <div class="col-sm-auto">
+                    <div class="home-data">
+                        <h1 class="home-title">
+                            Enjoy Delicious
+                            <div>
+                                <img src="./resources/img/home-sushi-title.png">
+                                Sushi Food
+                            </div>
+                        </h1>
 
-                <div class="home-data">
-                    <h1 class="home-title">
-                        Enjoy Delicious
+                        <p class="home-description">
+                            Enjoy a good dinner with the best dishes in
+                            the restaurant and improve your day.
+                        </p>
 
-                        <div>
-                            <img src="./resources/img/home-sushi-title.png">
-                            Sushi Food
-                        </div>
-                    </h1>
-
-                    <p class="home-description">
-                        Enjoy a good dinner with the best dishes in 
-                        the restaurant and improve your day.
-                    </p>
-
-                    <a href="#" class="button">
-                        Checkout the menu <i class="ri-arrow-right-line"></i>
-                    </a>
+                        <a href="#" class="button">
+                            Checkout the menu <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <img src="./resources/img/leaf-branch-2.png" alt="" class="home-leaf-1">
-            <img src="./resources/img/leaf-branch-4.png" alt="" class="home-leaf-2">
         </section>
 
-        <!--==================== ABOUT ====================-->
-        <section class="about section" id="about">
-                <img src="./resources/img/home-sushi-rolls.png" alt="">
-        </section>
+        <!--==================== Table reservation ====================-->
+        <!-- <section class="about section" id="reservation">
+        </section> -->
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-                
+            <div class="about-container container grid">
+                <div class="about-data">
+
+                </div>
+            </div>
         </section>
-    </main>
+    </div>
 
     <div class="login-popup">
         <div class="close-btn">&times;</div>
