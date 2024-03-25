@@ -143,6 +143,28 @@ section{
    background-color: #000000;
 }
 
+.nav-item a{
+    position: relative;
+}
+
+.nav-item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #fc0fc0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px hsla(315, 98%, 52%, 1);
+    transform: scale(0);
+    transition: transform .5s;
+}
+
+.nav-item a:hover::after{
+    transform: scale(1);
+}
+
 #login{
     background: transparent;
     width: 100px;
@@ -152,10 +174,19 @@ section{
     cursor: pointer;
     text-align: center;
     border-radius: 6px;
+    transition: .5s;
+    padding: 5px 0;
+}
+
+#login:hover{
+    background: hsl(315, 98%, 52%);
+    border: 2px solid #fc0fc0;
+    box-shadow: 0 0 10px hsla(315, 98%, 52%, 0.5);
+    color: #000;
 }
 
 .bg-header{
-    box-shadow: 0 2px 8px hsla(315, 97%, 40%, 0.3);
+    box-shadow: 0 2px 10px hsla(315, 98%, 52%, 0.5);
 }
 
 /* ========================= LOGIN POPUP ============================= */
@@ -170,7 +201,7 @@ section{
     max-width: 600px;
     padding: 20px 30px;
     background: linear-gradient(45deg, #E203AA, hsl(315, 97%, 40%),#B00385);
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px hsla(315, 98%, 52%, 0.5);
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms,
                 opacity 200ms ease-in-out 0ms,
@@ -327,7 +358,8 @@ section{
     padding: 1rem 1.5rem;
     border-radius: 4rem;
     font-weight: 500;
-    transition: background .3s;
+    transition: trasnform .3s, background-color .3s, box-shadow .3s;
+    box-shadow: 0 0 10px hsla(315, 98%, 52%, 0);
 }
 
 .button i{
@@ -337,8 +369,36 @@ section{
 
 .button:hover{
     background-color: #FD35CB;
+    box-shadow: 0 0 10px hsla(315, 98%, 52%, 0.5);
 }
 
 .button:hover i{
     transform: translateX(.25rem);
+}
+
+/* =================== Menu.html ================== */
+.category-row {
+    justify-content: center;
+    width: 80vw;
+    flex-wrap: nowrap;
+}
+
+.menu-btn {
+    width: 150px;
+    height: 35px;
+    margin: 5px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+    background: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: white;
 }
