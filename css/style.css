@@ -143,6 +143,17 @@ section{
    background-color: #000000;
 }
 
+#login{
+    background: transparent;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+}
+
 .bg-header{
     box-shadow: 0 2px 8px hsla(315, 97%, 40%, 0.3);
 }
